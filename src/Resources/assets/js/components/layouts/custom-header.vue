@@ -70,8 +70,8 @@
         }
 
         .home-icon {
-            float: right;
-            margin-right: 7px;
+            position: absolute;
+            right: 0px;
         }
     }
 </style>

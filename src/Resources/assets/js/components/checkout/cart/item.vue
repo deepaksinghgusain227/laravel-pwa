@@ -19,10 +19,10 @@
                             <span>{{ attribute.option_label }}</span>
                         </div>
                     </div>
-
+                    
                     <div class="cart-item-price">
                         <label>{{ $t('Price :') }} </label>
-                        <span v-html="cartItem.product.formated_price"></span>
+                        <span v-html="cartItem.product.formated_price" class="product-price"></span>
                     </div>
 
                     <div class="cart-item-subtotal">
@@ -141,9 +141,23 @@
                         }
                     }
 
+                    .cart-item-price{
+                        span {
+                            .sticker {
+                                display:none;
+                            }
+                        }
+                    }
+
                     > div {
                         margin-bottom: 8px;
                         font-size: 14px;
+
+                        > span {
+                            .sticker {
+                                display: none;
+                            }
+                        }
 
                         &:last-child {
                             margin-bottom: 0;
@@ -152,6 +166,8 @@
                         label {
                             color: rgba(0, 0, 0, 0.56);
                             font-weight: 600;
+                            float: left;
+                            margin-right: 10px;
                         }
 
                         span {
@@ -232,7 +248,7 @@
                 }
 
                 span {
-                    line-height: 24px;
+                    line-height: 23px;
                 }
             }
 
@@ -253,6 +269,12 @@
                     line-height: 24px;
                 }
             }
+        }
+    }
+
+    .product-price{
+        .special-price{
+            float:none !important;
         }
     }
 </style>

@@ -280,6 +280,7 @@
                 .panel-heading {
                     padding: 0;
                     border-bottom: 1px solid rgba(0, 0, 0 ,0.12);
+                    width:100%;
 
                     .update-cart-link {
                         float: left;
@@ -296,7 +297,7 @@
                         }
 
                         span {
-                            line-height: 24px;
+                            line-height: 23px;
                         }
                     }
 
